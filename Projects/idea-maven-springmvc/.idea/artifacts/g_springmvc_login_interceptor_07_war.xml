@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="g-springmvc-login-interceptor-07:war">
+    <output-path>$PROJECT_DIR$/g-springmvc-login-interceptor-07/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>g-springmvc-login-interceptor-07</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="g-springmvc-login-interceptor-07-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="g-springmvc-login-interceptor-07:war exploded" />
+    </root>
+  </artifact>
+</component>

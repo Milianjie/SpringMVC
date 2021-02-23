@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="f--springmvc-interceptor-06:war exploded">
+    <output-path>$PROJECT_DIR$/f--springmvc-interceptor-06/target/f--springmvc-interceptor-06</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>f--springmvc-interceptor-06</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="f-springmvc-interceptor-06" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/f-springmvc-interceptor-06/target/f--springmvc-interceptor-06/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="f-springmvc-interceptor-06/web/Web" />
+    </root>
+  </artifact>
+</component>

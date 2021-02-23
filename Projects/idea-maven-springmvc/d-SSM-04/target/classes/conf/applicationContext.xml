@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--spring配置文件，声明service、dao等对象-->
+
+    <!--指定属性资源配置文件的路径，下面数据源需要使用-->
+    <context:property-placeholder location="classpath:conf/jdbc.properties"/>
+
+    <!--声明数据源-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--声明框架中的SqlSessionFactoryBean，间接创建SqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:conf/mybatis.xml"/>
+    </bean>
+
+    <!--声明扫描mybatis配置文件的扫描器，属性是dao接口包的路径和sqlSessionFactory对象
+        以便创建dao接口的代理对象使用-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="basePackage" value="com.studymyself.dao"/>
+    </bean>
+
+    <!--声明注解扫描器，service类的@Service所在包位置-->
+    <context:component-scan base-package="com.studymyself.service"/>
+
+    <!--下面就是需要添加事务时的配置：注解配置，AspectJ配置等，先不加-->
+
+</beans>

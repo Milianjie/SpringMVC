@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="d-SSM-04" />
+        <module name="g-springmvc-login-interceptor-07" />
+        <module name="f-springmvc-interceptor-06" />
+        <module name="a-springmvc-web-01" />
+        <module name="c-springmvc-return-03" />
+        <module name="e-springmvc-exceptionhandler-05" />
+        <module name="b-spring-webparam-02" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="a-springmvc-web-01" target="1.8" />
+      <module name="b-spring-webparam-02" target="1.8" />
+      <module name="c-springmvc-return-03" target="1.8" />
+      <module name="d-SSM-04" target="1.8" />
+      <module name="e-springmvc-exceptionhandler-05" target="1.8" />
+      <module name="f-springmvc-interceptor-06" target="1.8" />
+      <module name="g-springmvc-login-interceptor-07" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

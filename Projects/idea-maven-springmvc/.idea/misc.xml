@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/a-springmvc-web-01" />
+    <file type="web" url="file://$PROJECT_DIR$/b-spring-webparam-02" />
+    <file type="web" url="file://$PROJECT_DIR$/c-springmvc-return-03" />
+    <file type="web" url="file://$PROJECT_DIR$/d-SSM-04" />
+    <file type="web" url="file://$PROJECT_DIR$/e-springmvc-exceptionhandler-05" />
+    <file type="web" url="file://$PROJECT_DIR$/f-springmvc-interceptor-06" />
+    <file type="web" url="file://$PROJECT_DIR$/g-springmvc-login-interceptor-07" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/a-springmvc-web-01/pom.xml" />
+        <option value="$PROJECT_DIR$/b-spring-webparam-02/pom.xml" />
+        <option value="$PROJECT_DIR$/c-springmvc-return-03/pom.xml" />
+        <option value="$PROJECT_DIR$/d-SSM-04/pom.xml" />
+        <option value="$PROJECT_DIR$/e-springmvc-exceptionhandler-05/pom.xml" />
+        <option value="$PROJECT_DIR$/f--springmvc-interceptor-06/pom.xml" />
+        <option value="$PROJECT_DIR$/f-springmvc-interceptor-06/pom.xml" />
+        <option value="$PROJECT_DIR$/g-springmvc-login-interceptor-07/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

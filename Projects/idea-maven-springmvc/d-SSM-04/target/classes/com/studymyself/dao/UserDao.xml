@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.studymyself.dao.UserDao">
+
+    <insert id="insertUser">
+        insert into t_user(loginName,loginPwd,realName) values (#{loginName},#{loginPwd},#{realName})
+    </insert>
+
+    <select id="selectAll" resultType="User">
+        select id,loginName,realName from t_user
+    </select>
+
+    <select id="selectByLoginName" resultType="User">
+        select id,loginName,realName from t_user where loginName = #{loginName}
+    </select>
+
+</mapper>

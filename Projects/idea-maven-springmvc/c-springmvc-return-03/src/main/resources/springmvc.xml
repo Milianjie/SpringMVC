@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--声明组件扫描器-->
+    <context:component-scan base-package="com.studymyself.controller"/>
+
+    <!--声明配置视图解析器,框架提供的一个类-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--前缀属性：视图文件的路径，前后要加/，前一个/表示项目根路径：http://localhost:8080/a_springmvc_web_01-->
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <!--后缀属性：视图文件的类型-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--配置注解驱动，注意是mvc标签声明的-->
+    <mvc:annotation-driven/>
+</beans>
